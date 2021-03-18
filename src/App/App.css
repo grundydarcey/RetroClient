@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'Nue Gothic';
+    src: url('../Fonts/Fonts/nue-gothic-round-freeware-webfont.woff');
+  }
+
 .App p {
   color: #fff;
+  font-family: Nue Gothic;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+  letter-spacing: 10px;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.solarSystem {
+  margin-top: -10px;
+  width: 500px;
+}
+
+.App {
+  text-align: center;
 }
