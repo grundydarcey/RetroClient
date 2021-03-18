@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App/App';
 import './index.css';
-import { PlanetProvider } from './PlanetContext';
+//import { PlanetProvider } from './PlanetContext';
 
 ReactDOM.render(
   <BrowserRouter>

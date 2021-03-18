@@ -1,8 +1,8 @@
 import React from 'react';
 import './landingpage.css';
-import PlanetAPIService from '../planet-api-service';
-import PlanetContext from '../PlanetContext';
-import config from '../config';
+//import PlanetAPIService from '../planet-api-service';
+//import PlanetContext from '../PlanetContext';
+//import config from '../config';
 
 export default class LandingPage extends React.Component {
   
