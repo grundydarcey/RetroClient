@@ -1,0 +1,10 @@
+.landing p {
+  margin-top: 60px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-family: palatino;
+  font-size: 18px;
+  line-height: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
