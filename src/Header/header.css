@@ -1,0 +1,18 @@
+.headercontainer {
+  margin-top: -20px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+ 
+.headerparts {
+  display: flex;
+  flex-grow: 3;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.headercontainer .link {
+  font-size: 15px;
+  letter-spacing: 5px;
+}

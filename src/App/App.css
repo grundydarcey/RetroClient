@@ -22,3 +22,8 @@
 .App {
   text-align: center;
 }
+
+.line {
+  border-color: #682860;
+  border-width: 8px;
+}
