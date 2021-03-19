@@ -154,7 +154,7 @@ export default function DateSelector() {
         {(planet.submittedDate).toISOString()} */}
       </section>
     }
-    return <p>Select a date</p>
+    return <p>Please select a date</p>
   }
   
   return (

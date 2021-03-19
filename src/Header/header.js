@@ -16,10 +16,9 @@ export default class Header extends Component {
           <Link to='/checkdates' className='link'>
             Check Future Dates
           </Link>
-          <p className='link'>
+          <Link to='/planetguide' className='link'>
             Planet Guide
-          </p>
-          
+          </Link>
         </section>
       </section>
     )
