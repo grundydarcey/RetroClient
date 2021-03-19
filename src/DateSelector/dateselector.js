@@ -37,9 +37,9 @@ export default function DateSelector() {
       moment(planet.submittedDate).isBetween(planet.planets[0].seventeenth_enter_date, planet.planets[0].seventeenth_exit_date) ||
       moment(planet.submittedDate).isBetween(planet.planets[0].eighteenth_enter_date, planet.planets[0].eighteenth_exit_date)
     ) {
-      return <p>Mercury is in retrograde</p> 
+      return <p>Mercury will be in retrograde</p> 
     } else {
-      return <p>Mercury is not in retrograde</p>
+      return <p>Mercury will not be in retrograde</p>
     }
   }
 
@@ -49,9 +49,9 @@ export default function DateSelector() {
     moment(planet.submittedDate).isBetween(planet.planets[1].third_enter_date, planet.planets[1].third_exit_date) ||
     moment(planet.submittedDate).isBetween(planet.planets[1].fourth_enter_date, planet.planets[1].fourth_exit_date)
     ) {
-      return <p>Venus is in retrograde</p>
+      return <p>Venus will be in retrograde</p>
     } else {
-      return <p>Venus is not in retrograde</p>
+      return <p>Venus will not be in retrograde</p>
     }
   }
 
@@ -59,9 +59,9 @@ export default function DateSelector() {
     if (moment(planet.submittedDate).isBetween(planet.planets[2].next_enter_date, planet.planets[2].next_exit_date) ||
     moment(planet.submittedDate).isBetween(planet.planets[2].second_enter_date, planet.planets[2].second_exit_date)
     ) {
-      return <p>Mars is in retrograde</p>
+      return <p>Mars will be in retrograde</p>
     } else {
-      return <p>Mars is not in retrograde</p>
+      return <p>Mars will not be in retrograde</p>
     }
   }
 
@@ -73,9 +73,9 @@ export default function DateSelector() {
     moment(planet.submittedDate).isBetween(planet.planets[3].fifth_enter_date, planet.planets[3].fifth_exit_date) ||
     moment(planet.submittedDate).isBetween(planet.planets[3].sixth_enter_date, planet.planets[3].sixth_exit_date)
     ) {
-      return <p>Jupiter is in retrograde</p>
+      return <p>Jupiter will be in retrograde</p>
     } else {
-      return <p>Jupiter is not in retrograde</p>
+      return <p>Jupiter will not be in retrograde</p>
     }
   }
 
@@ -87,9 +87,9 @@ export default function DateSelector() {
     moment(planet.submittedDate).isBetween(planet.planets[4].fifth_enter_date, planet.planets[4].fifth_exit_date) ||
     moment(planet.submittedDate).isBetween(planet.planets[4].sixth_enter_date, planet.planets[4].sixth_exit_date)
     ) {
-      return <p>Saturn is in retrograde</p>
+      return <p>Saturn will be in retrograde</p>
     } else {
-      return <p>Saturn is not in retrograde</p>
+      return <p>Saturn will not be in retrograde</p>
     }
   }
 
@@ -101,9 +101,9 @@ export default function DateSelector() {
     moment(planet.submittedDate).isBetween(planet.planets[5].fifth_enter_date, planet.planets[5].fifth_exit_date) ||
     moment(planet.submittedDate).isBetween(planet.planets[5].sixth_enter_date, planet.planets[5].sixth_exit_date)
     ) {
-      return <p>Uranus is in retrograde</p>
+      return <p>Uranus will be in retrograde</p>
     } else {
-      return <p>Uranus is not in retrograde</p>
+      return <p>Uranus will not be in retrograde</p>
     }
   }
 
@@ -115,9 +115,9 @@ export default function DateSelector() {
     moment(planet.submittedDate).isBetween(planet.planets[6].fifth_enter_date, planet.planets[6].fifth_exit_date) ||
     moment(planet.submittedDate).isBetween(planet.planets[6].sixth_enter_date, planet.planets[6].sixth_exit_date)
     ) {
-      return <p>Neptune is in retrograde</p>
+      return <p>Neptune will be in retrograde</p>
     } else {
-      return <p>Neptune is not in retrograde</p>
+      return <p>Neptune will not be in retrograde</p>
     }
   }
 
@@ -129,9 +129,9 @@ export default function DateSelector() {
     moment(planet.submittedDate).isBetween(planet.planets[7].fifth_enter_date, planet.planets[7].fifth_exit_date) ||
     moment(planet.submittedDate).isBetween(planet.planets[7].sixth_enter_date, planet.planets[7].sixth_exit_date)
     ) {
-      return <p>Pluto is in retrograde</p>
+      return <p>Pluto will be in retrograde</p>
     } else {
-      return <p>Pluto is not in retrograde</p>
+      return <p>Pluto will not be in retrograde</p>
     }
   }
 

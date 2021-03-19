@@ -124,7 +124,7 @@ export default class Today extends Component {
     return (
       <section className='todaysreport'>
         <h2>Current Retrograde Report</h2>
-        <p className='today'>Feel free to keep this page as a bookmark. This page serves to show all of the planets in our solar system and their current positions related to retrograde throughout space.</p>
+        <p className='today'>Feel free to keep this page as a constant bookmark to reference. This page serves to show all of the planets in our solar system and their current positions related to retrograde throughout space. Scroll down to see the up-to-date report on planets in retrograde.</p>
         <section className='planetcontainer'>
           <section className='left'>
             <section className='mercuryflex'>
