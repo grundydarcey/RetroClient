@@ -1,0 +1,19 @@
+.futuredates p {
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-family: palatino;
+  font-size: 18px;
+  line-height: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+legend {
+  color: #fff;
+  font-family: palatino;
+}
+
+fieldset {
+  border-style: none;
+  border-color: #000;
+}

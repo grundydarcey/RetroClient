@@ -6,6 +6,7 @@ import LandingPage from '../LandingPage/landingpage';
 import PlanetContext from '../PlanetContext';
 import config from '../config';
 import Header from '../Header/header';
+import CheckDates from '../CheckDates/checkdates';
 
 export default class App extends Component {
   constructor(props) {
@@ -44,9 +45,10 @@ export default class App extends Component {
         <main className='App'>
           <Header />
           <hr className='line' />
-          <p>RETRODATE</p>
+          <h1>RETRODATE</h1>
           <img src={Solar} alt='solarsystem' className='solarSystem'></img>
           <Route exact path='/' component={LandingPage} />
+          <Route exact path='/checkdates' component={CheckDates} />
         </main>
       </PlanetContext.Provider>
     );
