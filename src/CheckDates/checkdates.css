@@ -17,3 +17,7 @@ fieldset {
   border-style: none;
   border-color: #000;
 }
+
+#futuredate {
+  color: #fff;
+}

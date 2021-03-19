@@ -15,4 +15,8 @@
 .headercontainer .link {
   font-size: 15px;
   letter-spacing: 5px;
+  font-family: Nue Gothic;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 40px;
 }

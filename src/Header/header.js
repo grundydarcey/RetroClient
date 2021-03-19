@@ -7,9 +7,9 @@ export default class Header extends Component {
     return (
       <section className='headercontainer'>
         <section className='headerparts'>
-          <p className='link'>
+          <Link to='/checkdates' className='link'>
             Check Dates
-          </p>
+          </Link>
           <p className='link'>
             Planet Guide
           </p>

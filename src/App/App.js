@@ -13,6 +13,8 @@ export default class App extends Component {
     super(props)
     this.state = {
       planets: [],
+      //submittedFutureReport: false,
+      submittedDate: [],
     }
   }
   static contextType = PlanetContext;
@@ -36,9 +38,22 @@ export default class App extends Component {
     })
   }
     
+  handleDateSubmission = (date) => {
+    this.setState({ submittedDate: date })
+  }
+
+  handleClearDate = () => {
+    this.setState({ submittedDate : [] })
+  }
+
   render() {
     const value = {
       planets: this.state.planets,
+      //submittedFutureReport: this.state.submittedFutureReport,
+      //handleReportSubmission: this.handleReportSubmission,
+      submittedDate: this.state.submittedDate,
+      handleDateSubmission: this.handleDateSubmission,
+      handleClearDate: this.handleClearDate,
     }
     return (
       <PlanetContext.Provider value={value}>
