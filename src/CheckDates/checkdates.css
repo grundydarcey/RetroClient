@@ -8,16 +8,6 @@
   margin-right: 100px;
 }
 
-legend {
-  color: #fff;
-  font-family: palatino;
-}
-
-fieldset {
-  border-style: none;
-  border-color: #000;
-}
-
 #futuredate {
   color: #fff;
 }

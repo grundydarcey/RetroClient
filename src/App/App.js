@@ -7,13 +7,14 @@ import PlanetContext from '../PlanetContext';
 import config from '../config';
 import Header from '../Header/header';
 import CheckDates from '../CheckDates/checkdates';
+import Today from '../Today/today';
+import PlanetGuide from '../PlanetGuide/planetguide';
 
 export default class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
       planets: [],
-      //submittedFutureReport: false,
       submittedDate: [],
     }
   }
@@ -42,18 +43,11 @@ export default class App extends Component {
     this.setState({ submittedDate: date })
   }
 
-  handleClearDate = () => {
-    this.setState({ submittedDate : [] })
-  }
-
   render() {
     const value = {
       planets: this.state.planets,
-      //submittedFutureReport: this.state.submittedFutureReport,
-      //handleReportSubmission: this.handleReportSubmission,
       submittedDate: this.state.submittedDate,
       handleDateSubmission: this.handleDateSubmission,
-      handleClearDate: this.handleClearDate,
     }
     return (
       <PlanetContext.Provider value={value}>
@@ -64,6 +58,8 @@ export default class App extends Component {
           <img src={Solar} alt='solarsystem' className='solarSystem'></img>
           <Route exact path='/' component={LandingPage} />
           <Route exact path='/checkdates' component={CheckDates} />
+          <Route exact path='/today' component={Today} />
+          <Route exact path='/planetguide' component={PlanetGuide} />
         </main>
       </PlanetContext.Provider>
     );
