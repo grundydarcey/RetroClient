@@ -3,10 +3,11 @@ import DatePicker from "react-datepicker";
 //import moment from 'moment';
 import PlanetContext from '../PlanetContext';
 import "react-datepicker/dist/react-datepicker.css";
+import './dateselector.css';
+import moment from 'moment';
 
 export default function DateSelector() {
   const planet = useContext(PlanetContext);
-
   const [startDate, setStartDate] = useState(new Date());
 
   const handleChange = (date) => {
@@ -18,10 +19,28 @@ export default function DateSelector() {
     //planet.handleClearDate();
   }
   
+   const checkFirstPlanet = () => {
+    if (moment(planet.submittedDate).isBetween(planet.planets[0].next_enter_date, planet.planets[0].next_exit_date)) {
+      return <p>Mercury is in retrograde</p> 
+    } else {
+      return <p>Mercury is not in retrograde</p>
+    }
+  }
+
   const Report = () => {
     if (planet.submittedDate.length !== 0) {
-      return <p>Report Time</p>
+      return <section className='report'>
+        {checkFirstPlanet()}
+
+        <div className='container'>
+          {planet.planets.map((data, key) => {
+            return <div key={key}>{data.next_enter_date}</div>;
+          })}
+        </div>
+        {(planet.submittedDate).toISOString()}
+      </section>
     } 
+    console.log(planet.planets[0].next_enter_date)
     return <p>Select a date</p>
     
   }
