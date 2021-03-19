@@ -15,13 +15,15 @@ export default function DateSelector() {
     planet.handleDateSubmission(date);
     console.log(planet)
     console.log(planet.planets)
+    //planet.handleClearDate();
   }
   
   const Report = () => {
-    if (planet.submittedDate) {
-      return <p>Date has been selected, report pending</p>
-    }
-    return <p>You havent selected date yet</p>
+    if (planet.submittedDate.length !== 0) {
+      return <p>Report Time</p>
+    } 
+    return <p>Select a date</p>
+    
   }
   
   return (

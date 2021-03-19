@@ -13,9 +13,9 @@ export default class Header extends Component {
           <p className='link'>
             Planet Guide
           </p>
-          <p className='link'>
+          <Link to='/' className='link'>
             Home
-          </p>
+          </Link>
         </section>
       </section>
     )
