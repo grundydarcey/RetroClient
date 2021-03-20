@@ -9,7 +9,6 @@ import Header from '../Header/header';
 import CheckDates from '../CheckDates/checkdates';
 import Today from '../Today/today';
 import PlanetGuide from '../PlanetGuide/planetguide';
-import Accordion from '../Accordion';
 
 export default class App extends Component {
   constructor(props) {
@@ -61,7 +60,7 @@ export default class App extends Component {
           <Route exact path='/checkdates' component={CheckDates} />
           <Route exact path='/today' component={Today} />
           <Route exact path='/planetguide' component={PlanetGuide} />
-          <Route exact path='/accordion' component={Accordion} />
+        
         </main>
       </PlanetContext.Provider>
     );
