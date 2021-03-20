@@ -46,3 +46,14 @@ h2 {
   width: 200px;
   height: 200px;
 }
+
+@media all and (min-width: 100px) and (max-width: 800px) {
+  .todaysreport .today {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .planetcontainer {
+    margin: 0;
+  }
+}
