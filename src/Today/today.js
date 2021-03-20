@@ -120,7 +120,7 @@ export default class Today extends Component {
     ) ? (
       <p>Pluto is currently in retrograde</p>
     ) : (
-      <p>Plutois currently not in retrograde</p>
+      <p>Pluto is currently not in retrograde</p>
     )
 
     return (
