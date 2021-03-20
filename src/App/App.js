@@ -31,7 +31,6 @@ export default class App extends Component {
       return data.json()
     })
     .then(res => {
-      console.log(res)
       this.setState({ planets: res })
     })
     .catch((error) => {

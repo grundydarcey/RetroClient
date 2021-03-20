@@ -11,10 +11,7 @@ export default function DateSelector() {
 
   const handleChange = (date) => {
     setStartDate(date)
-    console.log(date)
     planet.handleDateSubmission(date);
-    console.log(planet)
-    console.log(planet.planets)
   }
   
    const checkMercury = () => {
