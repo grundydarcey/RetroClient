@@ -25,4 +25,11 @@
   .headercontainer {
     width: 100%;
   }
+
+  .headercontainer .link {
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-family: Nue Gothic;
+    text-decoration; none;
+  }
 }
