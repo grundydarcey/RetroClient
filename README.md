@@ -1,8 +1,8 @@
 # RetroDate API
 
 ![alt text](/src/Images/home.png?raw=true)
-![alt text](https://github.com/grundydarcey/retroclient/blob/src/Images/today.png?raw=true)
-![alt text](https://github.com/grundydarcey/retroclient/blob/src/Images/planetguide.png?raw=true)
+![alt text](/src/Images/today.png?raw=true)
+![alt text](/src/Images/planetguide.png?raw=true)
 
 My third capstone is a website/app to help people connect to information about planets in our solar system entering and exiting stages of retrograde. Users can access a page that show all of the other planets and whether or not they are in retrograde. Users can access another page where they can select a date in the future and find out if it falls in any planets retrograde periods. Users can also visit a page that gives reports on each planet to see their upcoming retrograde periods for the next five years.
 
