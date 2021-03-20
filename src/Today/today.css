@@ -53,10 +53,6 @@ h2 {
     margin-right: 50px;
   }
 
-  .planetcontainer {
-    margin: 0;
-  }
-
   .left p, .right p {
     font-size: 15px;
     letter-spacing: 1px;
@@ -71,7 +67,7 @@ h2 {
   }
 
   .planet {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
   }
 }
