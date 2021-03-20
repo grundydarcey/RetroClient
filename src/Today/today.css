@@ -55,6 +55,7 @@ h2 {
 
   .planetcontainer {
     margin: 0;
+    width: 500px;
   }
 
   p.text {
