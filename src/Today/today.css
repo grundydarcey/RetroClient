@@ -60,4 +60,9 @@ h2 {
   p.text {
     font-size: 10px;
   }
+
+  .left, .right {
+    display: flex;
+    flex-direction: column;
+  }
 }
