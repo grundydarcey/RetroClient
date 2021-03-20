@@ -13,7 +13,9 @@ import moment from 'moment';
 
 export default class Today extends Component {
   static contextType = PlanetContext;
+  
   render() {
+    //these 8 ternary operators allow for checking the current date and time and if it falls within retrograde dates
     const planetCheck = this.context.planets;
     const MercuryCheck = (moment(new Date()).isBetween(planetCheck[0].next_enter_date, planetCheck[0].next_exit_date) ||
     moment(new Date()).isBetween(planetCheck[0].second_enter_date, planetCheck[0].second_exit_date) ||

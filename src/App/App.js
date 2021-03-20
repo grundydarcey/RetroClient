@@ -11,6 +11,7 @@ import Today from '../Today/today';
 import PlanetGuide from '../PlanetGuide/planetguide';
 
 export default class App extends Component {
+  //controls adding things into context via app
   constructor(props) {
     super(props)
     this.state = {
@@ -20,6 +21,7 @@ export default class App extends Component {
   }
   static contextType = PlanetContext;
 
+  //fetches planet information like name and dates of retrogrades
   componentDidMount = () => {
     fetch(`${config.API_ENDPOINT}/planets`, {
       method: 'GET',
@@ -31,18 +33,21 @@ export default class App extends Component {
       return data.json()
     })
     .then(res => {
+      //adds planets into context by way of this.state
       this.setState({ planets: res })
     })
     .catch((error) => {
       console.error({ error })
     })
   }
-    
+  
+  //changes empty array to currently selected date in date selector component
   handleDateSubmission = (date) => {
     this.setState({ submittedDate: date })
   }
 
   render() {
+    //supplies context to all components within routes below
     const value = {
       planets: this.state.planets,
       submittedDate: this.state.submittedDate,
@@ -59,7 +64,6 @@ export default class App extends Component {
           <Route exact path='/checkdates' component={CheckDates} />
           <Route exact path='/today' component={Today} />
           <Route exact path='/planetguide' component={PlanetGuide} />
-        
         </main>
       </PlanetContext.Provider>
     );

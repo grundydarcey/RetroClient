@@ -7,6 +7,7 @@ export default class CheckDates extends Component {
   constructor(props) {
     super(props)
     this.state = {
+      //determines whether to show 'select a date' call to action or to begin displaying the report
       submittedFutureReport: false,
     }
     this.handleReportSubmission = this.handleReportSubmission.bind(this);

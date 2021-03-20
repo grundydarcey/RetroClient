@@ -3,6 +3,7 @@ import './planetguide.css';
 import PlanetContext from '../PlanetContext';
 
 export default class PlanetGuide extends React.Component {
+  //each drop down section has its own state assigned to it to control toggling motion on it
   constructor(props) {
     super(props)
     this.state = {
@@ -27,6 +28,7 @@ export default class PlanetGuide extends React.Component {
 
   static contextType = PlanetContext;
 
+  //this section starts 8 handlers that allow sections to be expanded with retrograde information
   mercuryToggle() {
     this.setState({ mercuryActive: !this.state.mercuryActive });
   }
@@ -60,6 +62,7 @@ export default class PlanetGuide extends React.Component {
   }
 
   render() {
+    //these ternary operators determine whether each class will be active or inactive
     const mercuryActiveClass = this.state.mercuryActive ? "mercuryactive" : "inactive";
     const venusActiveClass = this.state.venusActive ? "venusactive" : "inactive";
     const marsActiveClass = this.state.marsActive ? "marsactive" : "inactive";

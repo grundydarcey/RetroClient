@@ -14,6 +14,7 @@ export default function DateSelector() {
     planet.handleDateSubmission(date);
   }
   
+  //this starts 8 checker functions to determine if date chosen falls in a period of retrograde for each planet
    const checkMercury = () => {
     if (moment(planet.submittedDate).isBetween(planet.planets[0].next_enter_date, planet.planets[0].next_exit_date) ||
       moment(planet.submittedDate).isBetween(planet.planets[0].second_enter_date, planet.planets[0].second_exit_date) ||
@@ -131,7 +132,7 @@ export default function DateSelector() {
       return <p>Pluto will not be in retrograde</p>
     }
   }
-
+  //logs out results if a date has been selected
   const Report = () => {
     if (planet.submittedDate.length !== 0) {
       return <section className='report'>
@@ -143,12 +144,6 @@ export default function DateSelector() {
         {checkUranus()}
         {checkNeptune()}
         {checkPluto()}
-        {/* <div className='container'>
-          {planet.planets.map((data, key) => {
-            return <div key={key}>{data.next_enter_date}</div>;
-          })}
-        </div>
-        {(planet.submittedDate).toISOString()} */}
       </section>
     }
     return <p>Please select a date</p>
