@@ -50,7 +50,7 @@ div {
 }
   
 .summary {
-  font-family: 'Josefin Slab', serif;
+  font-family: palatino;
   text-transform: uppercase;
   cursor: pointer;
   line-height: 25px;
@@ -61,7 +61,7 @@ div {
   display: block;
   transition: all 0.2s ease-in;
   line-height: 40px;
-  border-top: 2px solid #39a098;
+  border-top: 2px solid #682860;
 }
   
 .active .summary {
