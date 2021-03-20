@@ -1,6 +1,6 @@
 # RetroDate API
 
-![alt text](https://github.com/grundydarcey/retroclient/blob/src/Images/home.png?raw=true)
+![alt text](/src/Images/home.png?raw=true)
 ![alt text](https://github.com/grundydarcey/retroclient/blob/src/Images/today.png?raw=true)
 ![alt text](https://github.com/grundydarcey/retroclient/blob/src/Images/planetguide.png?raw=true)
 
