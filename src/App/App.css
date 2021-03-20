@@ -38,3 +38,9 @@
   border-color: #682860;
   border-width: 8px;
 }
+
+@media all and (min-width: 100px) and (max-width: 800px) {
+  .App {
+    width: 100%;
+  }
+}
