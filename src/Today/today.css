@@ -55,11 +55,14 @@ h2 {
 
   .planetcontainer {
     margin: 0;
-    width: 500px;
+    /*width: 500px;*/
   }
 
   .left p, .right p {
     font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+
   }
 
   .left, .right {
